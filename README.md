@@ -1,11 +1,21 @@
 # Day-Book
-Day Book for Small Business
+## Day Book for Person and Small Business
+  
+  This Software Could Be Used to manage anyone's Personal Accounts. This software dont give any importence to the Product or Services. This software is Designed to Keep Track of a perso's Income, Expence and to be paid, to be received Amounts.
 
 # Requirments
 Based On Current Environment 
 
-1. Python 3.10
-2. tkcalendar==1.6.1
+1. tkcalendar==1.6.1
+
+# Used Packages In The Project
+  
+  1. string
+  2. re
+  3. sqlite3
+  4. pathlib
+  5. tkinter
+  6. tkcalendar
 
 # Files Details 
 
@@ -85,6 +95,7 @@ Based On Current Environment
   
 #### 10. Close Current Company
 
+##
 ## DBManage.py
 
 ### DBmanage Class Sub Parts and Methods
@@ -141,6 +152,7 @@ Based On Current Environment
   
 #### 5. Close Data Base
 
+##
 ## Validation.py
 
 ### Validation Functions
