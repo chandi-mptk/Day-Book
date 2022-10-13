@@ -25,7 +25,7 @@ class DBmanage:
         # Create Company Table if Not Exist
         self.create_company_table()
     
-    # # Create Table
+    # # Create Table Area
     # Create Company List Table
     def create_company_table(self):
         # Create Companies List
@@ -127,7 +127,7 @@ class DBmanage:
         # Commit your changes in the database
         self.CONN.commit()
     
-    # # Insert Edit DB Data
+    # # Insert Edit DB Data Area
     # Insert Edit Company
     def insert_edit_company(self, company_list):
         # Get all Companies list from DB
@@ -419,8 +419,8 @@ class DBmanage:
 
         return self.CURSOR.fetchall()
     
-    # # Delete Data From DB
-    # Delete Company
+    # # Delete Data From DB Area
+    # Delete Company with all Data
     def delete_company(self, company_to_del):
         # Get All Company Detailed List (List of List)
         all_companies = self.fetch_company_list()
@@ -452,7 +452,7 @@ class DBmanage:
         else:
             print("Company Not Found in Index Table")  # If somehow Company Details Mismatch (Not Possible)
     
-    # Ledger Delete
+    # Ledger Delete If No other Data Attached with It
     def delete_ledget(self, company_name, ledger_id):
         try:
             # Delete Party Details from Party Table
@@ -465,7 +465,7 @@ class DBmanage:
             print(e)
             return False
     
-    # Party Delete
+    # Party Delete If No other Data Attached with It
     def delete_party(self, company_name, party_id):
         try:
             # Delete Party Details from Party Table
@@ -478,7 +478,7 @@ class DBmanage:
             print(e)
             return False
 
-    # Delete Voucher
+    # Delete Bill
     def delete_bill(self, company_name, bill_id):
         try:
             # Delete Bill Details from Bill Table

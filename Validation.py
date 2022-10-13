@@ -1,7 +1,6 @@
 from datetime import datetime
 from string import ascii_letters, digits
 import re
-from pathlib import Path
 
 
 # Name Validation
